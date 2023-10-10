@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ProductDescription should render description from context 1`] = `
+<div
+  className="productCard undefined"
+>
+  <span
+    className="productDescription undefined"
+  >
+    Coffee Mug
+  </span>
+</div>
+`;
+
+exports[`ProductDescription should render with description string 1`] = `
+<span
+  className="productDescription custom-class"
+>
+  product description
+</span>
+`;

@@ -1,0 +1,41 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ProductCard should render 1`] = `
+<div
+  className="productCard undefined"
+>
+  <img
+    alt="Coffee Mug"
+    className="productImg undefined"
+    src="./coffee-mug.png"
+  />
+  <span
+    className="productDescription undefined"
+  >
+    Coffee Mug
+  </span>
+  <div
+    className="buttonsContainer undefined"
+  >
+    <button
+      className="buttonMinus"
+      disabled={true}
+      onClick={[Function]}
+    >
+      -
+    </button>
+    <div
+      className="countLabel"
+    >
+      0
+    </div>
+    <button
+      className="buttonAdd"
+      disabled={false}
+      onClick={[Function]}
+    >
+      +
+    </button>
+  </div>
+</div>
+`;
