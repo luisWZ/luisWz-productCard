@@ -13,11 +13,14 @@
   "scripts": {
     "start": "tsdx watch",
     "build": "tsdx build",
-    "test": "tsdx test --passWithNoTests",
+    "test": "jest",
+    "test:watch": "jest --watch",
     "lint": "tsdx lint",
-    "prepare": "tsdx build",
     "size": "size-limit",
-    "analyze": "size-limit --why"
+    "analyze": "size-limit --why",
+    "postinstall": "husky install",
+    "prepack": "pinst --disable",
+    "postpack": "pinst --enable"
   },
   "peerDependencies": {
     "react": ">=18"
@@ -51,17 +54,25 @@
     "type": "git"
   },
   "devDependencies": {
+    "@babel/preset-env": "^7.22.20",
+    "@babel/preset-react": "^7.22.15",
     "@rollup/plugin-image": "^3.0.3",
     "@size-limit/preset-small-lib": "^9.0.0",
+    "@types/jest": "^29.5.5",
     "@types/react": "^18.2.27",
     "@types/react-dom": "^18.2.12",
+    "@types/react-test-renderer": "^18.0.3",
     "husky": "^8.0.3",
+    "identity-obj-proxy": "^3.0.0",
+    "jest": "^29.7.0",
+    "pinst": "^3.0.0",
     "postcss": "^8.4.31",
-    "prettier": "^3.0.3",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-test-renderer": "^18.2.0",
     "rollup-plugin-postcss": "^4.0.2",
     "size-limit": "^9.0.0",
+    "ts-jest": "^29.1.1",
     "tsdx": "^0.14.1",
     "tslib": "^2.6.2",
     "typescript": "^5.2.2"
