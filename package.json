@@ -46,6 +46,10 @@
       "limit": "10 KB"
     }
   ],
+  "repository": {
+    "url": "https://github.com/luisWZ/luisWz-productCard.git",
+    "type": "git"
+  },
   "devDependencies": {
     "@rollup/plugin-image": "^3.0.3",
     "@size-limit/preset-small-lib": "^9.0.0",

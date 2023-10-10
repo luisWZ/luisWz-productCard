@@ -5,7 +5,7 @@ Module testing using a react component
 ## Examples
 
 ```js
-import {} from 'llb-productcard';
+import { ProductCard } from 'luiswz-productcard';
 ```
 
 ```tsx
