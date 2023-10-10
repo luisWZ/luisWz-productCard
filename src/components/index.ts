@@ -1,11 +1,17 @@
-import { ProductCard as ProductCardHOC, ProductCardProps as ProductProps } from './ProductCard';
+import {
+  ProductCard as ProductCardHOC,
+  ProductCardProps as ProductProps,
+} from './ProductCard';
 
 import {
   Description as ProductCardDescription,
   ProductDescriptionProps,
 } from './ProductDescription';
 import { Image as ProductCardImage, ProductImageProps } from './ProductImage';
-import { ProductButtonsProps, Buttons as ProductCardButtons } from './ProductButtons';
+import {
+  ProductButtonsProps,
+  Buttons as ProductCardButtons,
+} from './ProductButtons';
 
 export { Description as ProductCardDescription } from './ProductDescription';
 export { Image as ProductCardImage } from './ProductImage';

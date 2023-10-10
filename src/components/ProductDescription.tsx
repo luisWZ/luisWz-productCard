@@ -9,7 +9,11 @@ export interface ProductDescriptionProps {
   style?: CSSProperties;
 }
 
-export const Description = ({ description, className, style }: ProductDescriptionProps) => {
+export const Description = ({
+  description,
+  className,
+  style,
+}: ProductDescriptionProps) => {
   const { product } = useContext(ProductContext);
   const descriptionToShow = description ? description : product.description;
 

@@ -14,9 +14,17 @@ export const Image = ({ image, className, style }: ProductImageProps) => {
   const { product } = useContext(ProductContext);
 
   const imageToShow = image ?? product.image ?? noImg;
-  const alt = product?.description && (image || product.image) ? product.description : 'Product';
+  const alt =
+    product?.description && (image || product.image)
+      ? product.description
+      : 'Product';
 
   return (
-    <img className={`${s.productImg} ${className}`} style={style} src={imageToShow} alt={alt} />
+    <img
+      className={`${s.productImg} ${className}`}
+      style={style}
+      src={imageToShow}
+      alt={alt}
+    />
   );
 };

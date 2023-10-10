@@ -10,7 +10,12 @@ interface UseProduct {
   initialValues?: InitialValues;
 }
 
-export const useProduct = ({ product, onChange, value = 0, initialValues }: UseProduct) => {
+export const useProduct = ({
+  product,
+  onChange,
+  value = 0,
+  initialValues,
+}: UseProduct) => {
   const [count, setCount] = useState<number>(initialValues?.count ?? value);
   const { isMounted } = useIsMounted();
 
@@ -38,6 +43,7 @@ export const useProduct = ({ product, onChange, value = 0, initialValues }: UseP
     handleCount,
     reset,
     maxCount: initialValues?.maxCount,
-    isMaxCountReached: !!initialValues?.maxCount && count >= initialValues?.maxCount,
+    isMaxCountReached:
+      !!initialValues?.maxCount && count >= initialValues?.maxCount,
   };
 };

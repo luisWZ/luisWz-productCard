@@ -1,6 +1,11 @@
 import React, { CSSProperties, createContext } from 'react';
 import { useProduct } from '../hooks/useProduct';
-import type { InitialValues, Product, ProductCardHandlers, onChangeArgs } from '../interfaces';
+import type {
+  InitialValues,
+  Product,
+  ProductCardHandlers,
+  onChangeArgs,
+} from '../interfaces';
 
 import s from '../styles/styles.module.css';
 
